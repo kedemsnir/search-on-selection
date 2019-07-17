@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Search on Selection",
+  "version": "0.1.0",
+  "permissions": [
+    "webNavigation",
+    "storage",
+    "<all_urls>",
+    "tabs",
+    "notifications"
+  ],
+  "web_accessible_resources": [
+    "script.js",
+    "myScript.js",
+    "style.css",
+    "options.js"
+  ],
+  "options_ui": {
+  "page": "options.html",
+  "browser_style": true
+  },
+  "browser_specific_settings": {
+  "gecko": {
+      "id": "kedemsnirexample@firefox.com",
+      "strict_min_version": "42.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentScript.js"],
+      "css":        ["style.css"]
+    } 
+  ]
+}
