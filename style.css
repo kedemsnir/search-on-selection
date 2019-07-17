@@ -1,0 +1,17 @@
+/*.gsc-results-wrapper-overlay.gsc-results-wrapper-visible {
+	display: none;
+}*/
+.gsc-modal-background-image.gsc-modal-background-image-visible {
+	opacity: 0;
+}
+
+.gsc-overflow-hidden {
+    overflow: scroll !important;
+}
+
+
+.gsc-results-wrapper-overlay.gsc-results-wrapper-visible{
+	position: absolute !important;
+	border-radius: 20px;
+}
+
